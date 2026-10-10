@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171b18">
+  <meta name="description" content="Перегляньте каталог перевірених автомобілів AutoTop у Києві.">
+  <title>Автомобілі — AutoTop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner">
+    <a class="wordmark" href="index.html" aria-label="AutoTop — на головну">AutoTop</a>
+    <input class="menu-checkbox" type="checkbox" id="menu-toggle">
+    <label class="menu-toggle" for="menu-toggle"><span></span><span></span><span class="visually-hidden">Меню навігації</span></label>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Головна навігація"><a href="index.html">Головна</a><a class="is-current" href="cars.html" aria-current="page">Автомобілі</a><a href="contact.html">Контакти</a></nav>
+  </div></header>
+
+  <main>
+    <section class="page-intro container"><p class="eyebrow"><span class="eyebrow-dot"></span> Каталог AutoTop</p><div class="page-intro-row"><h1>Автомобілі,<br><span>які обирають серцем.</span></h1><p>Кожен автомобіль пройшов повну перевірку. Обирайте спокійно — про все інше подбаємо ми.</p></div><div class="catalog-meta"><span><strong id="visible-count">6</strong> автомобілів у наявності</span><span>Оновлено сьогодні <b>↗</b></span></div></section>
+
+    <section class="catalog-section container">
+      <input class="filter-input" type="radio" name="car-filter" id="filter-all" checked>
+      <input class="filter-input" type="radio" name="car-filter" id="filter-sedan">
+      <input class="filter-input" type="radio" name="car-filter" id="filter-suv">
+      <input class="filter-input" type="radio" name="car-filter" id="filter-electric">
+      <div class="catalog-toolbar"><div class="filter-group" role="group" aria-label="Фільтр за типом автомобіля">
+        <label class="filter-button" for="filter-all">Усі авто</label>
+        <label class="filter-button" for="filter-sedan">Седани</label>
+        <label class="filter-button" for="filter-suv">Позашляховики</label>
+        <label class="filter-button" for="filter-electric">Електро</label>
+      </div><span class="catalog-note">Ціни вказано в USD</span></div>
+      <div class="car-grid catalog-grid">
+        <article class="car-card" data-category="sedan"><a class="car-image" href="contact.html" aria-label="Запитати про Porsche 911 Carrera"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80" alt="Porsche 911 Carrera" loading="lazy"><span class="car-tag">Вибір тижня</span></a><div class="car-info"><div class="car-title-line"><h2>Porsche 911 Carrera</h2><span>2021</span></div><p>3.0 · Бензин · Автомат · 28 000 км</p><div class="car-bottom"><strong>$ 112 900</strong><a href="contact.html">Деталі <span aria-hidden="true">↗</span></a></div></div></article>
+        <article class="car-card" data-category="sedan"><a class="car-image" href="contact.html" aria-label="Запитати про Mercedes-Benz C 300"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1000&q=80" alt="Mercedes-Benz C 300" loading="lazy"><span class="car-tag car-tag-light">Нове надходження</span></a><div class="car-info"><div class="car-title-line"><h2>Mercedes-Benz C 300</h2><span>2022</span></div><p>2.0 · Бензин · Автомат · 19 500 км</p><div class="car-bottom"><strong>$ 48 500</strong><a href="contact.html">Деталі <span aria-hidden="true">↗</span></a></div></div></article>
+        <article class="car-card" data-category="electric"><a class="car-image" href="contact.html" aria-label="Запитати про Tesla Model 3"><img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=80" alt="Tesla Model 3 Long Range" loading="lazy"><span class="car-tag">Електро</span></a><div class="car-info"><div class="car-title-line"><h2>Tesla Model 3 Long Range</h2><span>2023</span></div><p>Електро · AWD · Автомат · 12 000 км</p><div class="car-bottom"><strong>$ 39 900</strong><a href="contact.html">Деталі <span aria-hidden="true">↗</span></a></div></div></article>
+        <article class="car-card" data-category="suv"><a class="car-image" href="contact.html" aria-label="Запитати про BMW X5"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=80" alt="BMW X5 на дорозі" loading="lazy"><span class="car-tag">Повний привід</span></a><div class="car-info"><div class="car-title-line"><h2>BMW X5 xDrive30d</h2><span>2022</span></div><p>3.0 · Дизель · Автомат · 34 000 км</p><div class="car-bottom"><strong>$ 76 400</strong><a href="contact.html">Деталі <span aria-hidden="true">↗</span></a></div></div></article>
+        <article class="car-card" data-category="suv"><a class="car-image" href="contact.html" aria-label="Запитати про Volvo XC60"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=80" alt="Volvo XC60" loading="lazy"><span class="car-tag car-tag-light">Один власник</span></a><div class="car-info"><div class="car-title-line"><h2>Volvo XC60 Recharge</h2><span>2023</span></div><p>2.0 · Гібрид · Автомат · 16 800 км</p><div class="car-bottom"><strong>$ 59 700</strong><a href="contact.html">Деталі <span aria-hidden="true">↗</span></a></div></div></article>
+        <article class="car-card" data-category="electric"><a class="car-image" href="contact.html" aria-label="Запитати про Audi e-tron"><img src="https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?auto=format&fit=crop&w=1000&q=80" alt="Audi e-tron" loading="lazy"><span class="car-tag">Електро</span></a><div class="car-info"><div class="car-title-line"><h2>Audi e-tron Sportback</h2><span>2022</span></div><p>Електро · AWD · Автомат · 21 000 км</p><div class="car-bottom"><strong>$ 52 300</strong><a href="contact.html">Деталі <span aria-hidden="true">↗</span></a></div></div></article>
+      </div>
+    </section>
+    <section class="catalog-cta"><div class="container catalog-cta-inner"><p>Не знайшли потрібне?</p><a href="contact.html" class="button button-dark">Підберемо разом <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="wordmark" href="index.html">AutoTop</a><p>Авто з характером. Вибір із впевненістю.</p><span>© 2026 AutoTop</span></div></footer>
+</body>
+</html>

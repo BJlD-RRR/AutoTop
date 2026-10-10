@@ -45,7 +45,7 @@ h1, h2, h3 { font-family: var(--serif); }
 .button-dark:hover { background: #c4eb56; }
 .button-light { background: var(--accent); color: #1b2018; }
 .text-link { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 700; }
-.text-link span, .button span, .map-link span { font-size: 16px; }
+.text-link span, .button span { font-size: 16px; }
 .hero-note { display: flex; align-items: center; gap: 11px; margin-top: 51px; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .hero-note strong { color: var(--ink); font-size: 12px; }
 .note-mark { width: 31px; height: 31px; display: grid; place-items: center; border: 1px solid #536640; border-radius: 50%; color: var(--accent); font-weight: 700; }
@@ -128,11 +128,10 @@ h1, h2, h3 { font-family: var(--serif); }
 .contact-details { display: flex; flex-direction: column; gap: 31px; padding-top: 11px; }
 .contact-block { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; }
 .contact-label { margin-bottom: 5px; color: var(--muted); font-size: 10px; font-weight: 700; text-transform: uppercase; }
-.contact-block > a:not(.contact-main):not(.map-link), .contact-block > p:not(.contact-main) { margin: 0; color: #b2baaf; font-size: 12px; }
+.contact-block > a:not(.contact-main), .contact-block > p:not(.contact-main) { margin: 0; color: #b2baaf; font-size: 12px; }
 .contact-block .contact-main { margin: 0; font: 600 18px/1.45 var(--serif); }
 .contact-block a.contact-main { transition: color .2s ease; }
 .contact-block a.contact-main:hover { color: var(--accent); }
-.map-link { display: inline-flex; gap: 9px; align-items: center; margin-top: 6px; font-size: 11px; font-weight: 700; }
 .hours-row { width: min(100%, 315px); display: flex; justify-content: space-between; gap: 20px; padding: 8px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 11px; }
 .hours-row strong { color: var(--ink); font-size: 11px; }
 .contact-form { padding: 32px; background: #222923; }
@@ -234,7 +233,7 @@ h1, h2, h3 { font-family: var(--serif); }
 	.contact-layout { grid-template-columns: 1fr; gap: 38px; padding-bottom: 60px; }
 	.contact-details { display: grid; grid-template-columns: 1fr 1fr; gap: 27px 15px; }
 	.contact-block .contact-main { font-size: 15px; }
-	.contact-block > a:not(.contact-main):not(.map-link), .contact-block > p:not(.contact-main) { font-size: 10px; line-height: 1.5; }
+	.contact-block > a:not(.contact-main), .contact-block > p:not(.contact-main) { font-size: 10px; line-height: 1.5; }
 	.hours-row { gap: 10px; font-size: 9px; }
 	.hours-row strong { font-size: 9px; text-align: right; }
 	.contact-form { padding: 24px 20px; }
